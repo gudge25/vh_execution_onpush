@@ -5,7 +5,7 @@ import os
 # Authenticate yourself with the token
 auth_token = 'udhv7v8Y5wEIj8wLvLWxeNLgQALANIsExOqPa0sR'
 headers = {'Authorization': 'Token %s' % auth_token}
-project_id = '0171c4a6-4e6c-21e6-0611-4c591adfa8a0'
+project_id = '017202c1-9539-bb88-ed10-1148e002ef71'
 
 # Fetch all new changes from the repository
 # Define the branches that Valohai should have access to on Project->Settings->Repository
@@ -17,7 +17,7 @@ fetchResponse.raise_for_status()
 # Define the payload
 # GITHUB_SHA contains the commit hash that Valohai uses
 new_exec_payload = {
-  "project": "0171c4a6-4e6c-21e6-0611-4c591adfa8a0",
+  "project": project_id,
   "commit": os.getenv('GITHUB_SHA'),
   "step": "Execute python train.py",
 }
