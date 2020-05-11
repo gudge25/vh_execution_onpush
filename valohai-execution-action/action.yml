@@ -5,7 +5,3 @@ author: "drazen@valohai.com"
 runs:
   using: "docker"
   image: "Dockerfile"
-
-branding:
-  icon: "arrow-up-circle"
-  color: "blue"
