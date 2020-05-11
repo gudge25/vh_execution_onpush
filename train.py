@@ -1,4 +1,4 @@
 import os
 import argparse
 
-print("From the newest commit")
+print("Updated train.py!")
