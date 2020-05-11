@@ -1,0 +1,11 @@
+name: "Create Valohai execution on push"
+description: "Run a new execution on app.valohai.com on each new push to repository"
+author: "drazen@valohai.com"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "arrow-up-circle"
+  color: "blue"
