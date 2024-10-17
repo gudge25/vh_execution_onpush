@@ -1,9 +1,0 @@
-name: Workflow for Create Valohai execution on push
-on: push
-jobs:
-  build:
-    name: Create Valohai execution on push
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./valohai-execution-action
